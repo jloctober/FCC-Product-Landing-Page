@@ -1,0 +1,180 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#header-img {
+  width: 500px;
+}
+
+main {
+  background-color: #F5D3C6;
+  margin-top: 61px;
+  padding-top: 10px;
+}
+
+a {
+  color: #FBF0EC;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DF6E41;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: auto 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+#submit {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#email {
+  padding: 5px;
+}
+
+#features {
+  margin-left: 50px;
+}
+
+#video {
+  display: block;
+  margin: 0px auto;
+}
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.specs {
+  border-style: solid;
+  border: 2px solid black;
+  margin: 20px 40px;
+  padding: 20px 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #DF6E41;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DF6E41;
+}
+}
+</style>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header id="header">
+  <div>
+    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Company Logo">
+  </div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#features">Features</a></li>
+      <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="center">
+    <h1>Handcrafted, home-made masterpieces</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter email address"><br>
+        <input id="submit" type="submit" value="Get Started">
+      </form>
+  </div>
+
+  <div id="features">
+    <div>
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+    <div>
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </div>
+
+  <section id="how-it-works">
+    <iframe id="video" width="720" height="400" src="https://www.youtube.com/embed/y8Yv4pnO7qc?ecver=2">
+    </iframe>
+  </section>
+
+  <section id="pricing">
+    <div id="tenor" class="specs">
+      <h3 class="center">Tenor Trombone</h3>
+      <ul>
+        <p>fun for make</p>
+        <p>to play band uniform</p>
+        <p>make hat dance high</p>
+        <p>beef marble</p>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+    <div id="bass" class="specs">
+      <h3 class="center">Bass Trombone</h3>
+      <ul>
+        <p>fun for make</p>
+        <p>to play band uniform</p>
+        <p>make hat dance high</p>
+        <p>beef marble</p>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+    <div id="valve" class="specs">
+      <h3 class="center">Valve Trombone</h3>
+      <ul>
+        <p>fun for make</p>
+        <p>to play band uniform</p>
+        <p>make hat dance high</p>
+        <p>beef marble</p>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <p>Copyright 2016, Original Trombones</p>
+</footer>
